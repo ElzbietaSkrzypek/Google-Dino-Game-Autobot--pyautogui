@@ -5,11 +5,8 @@ from PIL import Image
 
 time.sleep(3)
 
-# --- Check dinos top of the nose position. Run program and set mose pointer on the dinos top of the nose.
-# Main result: Point(x=189, y=315), so I will chose x=190, y=300 as x and y of region to do screenshot.
-#
-# print(pyautogui.position())
-#
+# -------------- SECOND PART ----------------- #
+
 while True:
     image = pyautogui.screenshot("screenshot3.png", region=(
         190, 300, 120, 100))  # 120 and 100 is a weight and height of region which works for me.
